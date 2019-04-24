@@ -1,0 +1,180 @@
+@import "../../../base.less";
+@base-data-width: 360px;
+@collect-data-width: 380px;
+.overview {
+  background: #0b1833;
+  padding: 20px 30px 10px;
+  height: 100%;
+  overflow: auto;
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+    .header-img {
+      height: 40px;
+    }
+    .header-title {
+      font-size: 22px;
+      text-align: center;
+      margin-top: -36px;
+      color: @main-white
+    }
+  }
+  .content-data-title {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    width: 130px;
+    text-align: center;
+    margin: 0;
+    background: url("../../../assets/images/overview-content-title-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: @main-white;
+  }
+
+  .overview-chart-title {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    width: 110px;
+    text-align: center;
+    background: url("../../../assets/images/overview-chart-title-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #9EF1FF;
+  }
+
+  .overview-base-data-root {
+    vertical-align: top;
+    display: inline-block;
+    width: @base-data-width;
+    .overview-other-data-root {
+      height: 320px;
+      background: url("../../../assets/images/overview-base-data-square-bg.png") no-repeat;
+      background-size: 100% 100%;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding-top: 8px;
+      .other-data-row {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  .overview-flow-data-root {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - @base-data-width - @collect-data-width - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    .flow-data-tab {
+      display: inline-block;
+      width: 60px;
+      height: 26px;
+      background: url("../../../assets/images/overview-flow-tab-bg.png") no-repeat;
+      background-size: 100% 100%;
+      float: right;
+      text-align: center;
+      color: #4F85D6;
+      padding-top: 2px;
+      cursor: pointer;
+    }
+    .flow-data-tab-active {
+      color: #9EF1FF;
+    }
+    .flow-data-top {
+      margin: 10px 20px;
+    }
+    .flow-data-middle {
+      height: 400px;
+      background: url("../../../assets/images/overview-flow-middle-bg.png") no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      .left-root {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 90px;
+        width: 90px;
+        height: 160px;
+        text-align: left;
+        background: url("../../../assets/images/overview-flow-data-left-bee.png") no-repeat;
+        background-size: 100% 100%;
+        color: #4F85D6;
+        font-size: 12px;
+      }
+      .right-root {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 90px;
+        width: 90px;
+        height: 160px;
+        background: url("../../../assets/images/overview-flow-data-right-bee.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: right;
+        color: #4F85D6;
+        font-size: 12px;
+      }
+      .value {
+        font-size: 16px;
+        font-family: 'custom';
+        color: #9EF1FF
+      }
+      .point-value {
+        color: #9EF1FF;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+    .flow-data-bottom {
+      padding: 30px 40px 0;
+      margin: 20px 20px 0;
+      height: 290px;
+      background: url("../../../assets/images/overview-flow-data-rectangle-bg.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .overview-collect-data-root {
+    vertical-align: top;
+    display: inline-block;
+    width: @collect-data-width;
+    .overview-collect-content {
+      padding: 40px 20px 0;
+      margin-top: 30px;
+      height: 750px;
+      background: url("../../../assets/images/overview-right-root-bg.png") no-repeat;
+      background-size: 100% 100%;
+      .overview-collect-car-flow-legend-container {
+        text-align: center;
+        margin-bottom: 14px;
+        .overview-collect-car-flow-legend-item {
+          display: inline-block;
+          .overview-collect-car-flow-legend {
+            height: 10px;
+            line-height: 10px;
+            color: #9EF1FF;
+            font-size: 12px;
+            margin-top: 4px;
+            .overview-collect-car-flow-legend-icon {
+              display: inline-block;
+              width: 12px;
+              height: 100%;
+              border-radius: 3px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .overview {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    .overview-flow-data-root {
+      width: 760px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}

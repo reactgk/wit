@@ -1,0 +1,56 @@
+@import "../../../../base.less";
+.list-root {
+  position: relative;
+  i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+  }
+
+  .left-top {
+    left: 0;
+    top: 0;
+    border-left: solid 1px @main-green;
+    border-top: solid 1px @main-green;
+  }
+  .left-bottom {
+    left: 0;
+    bottom: 0;
+    border-left: solid 1px @main-green;
+    border-bottom: solid 1px @main-green;
+  }
+
+  .right-top {
+    right: 0;
+    top: 0;
+    border-right: solid 1px @main-green;
+    border-top: solid 1px @main-green;
+  }
+  .right-bottom {
+    right: 0;
+    bottom: 0;
+    border-right: solid 1px @main-green;
+    border-bottom: solid 1px @main-green;
+  }
+  .list {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    width: 420px;
+    li {
+      padding-left: 14px;
+      padding-right: 14px;
+      list-style: none;
+      background: linear-gradient(to right, rgba(61, 104, 195, .5), rgba(61, 104, 195, .2), rgba(61, 104, 195, .1));
+      .content {
+        border-bottom: dashed 1px rgb(65, 114, 155);
+        padding: 16px 4px 10px 4px;
+      }
+    }
+    li:hover {
+      background: linear-gradient(to right, rgba(221, 30, 71, .5), rgba(153, 0, 51, .5));
+    }
+  }
+}
+

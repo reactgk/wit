@@ -1,0 +1,93 @@
+@import "../../../../base.less";
+.warning-info-modal {
+  position: absolute;
+  background-color: rgba(255, 37, 68, 0.1);
+  border-radius: 5px;
+  bottom: 220px;
+  right: 440px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  .warning-info-modal-close-container {
+    text-align: right;
+    .warning-info-modal-close {
+      font-style: normal;
+      font-size: 30px;
+      color: #cccccc;
+      cursor: pointer;
+    }
+    .warning-info-modal-close:hover {
+      color: @main-white;
+    }
+  }
+  .warning-info-modal-content {
+    .warning-info-modal-user-avatar-container {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 80px;
+      height: 88px;
+      margin-right: 30px;
+      .warning-info-modal-user-avatar {
+        width: 80px;
+        height: 88px;
+      }
+      .left-top {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        border-top: solid 1px @main-red;
+        border-left: solid 1px @main-red;
+      }
+      .left-bottom {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        border-bottom: solid 1px @main-red;
+        border-left: solid 1px @main-red;
+      }
+      .right-top {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        right: 0;
+        top: 0;
+        border-top: solid 1px @main-red;
+        border-right: solid 1px @main-red;
+      }
+      .right-bottom {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        right: 0;
+        bottom: 0;
+        border-bottom: solid 1px @main-red;
+        border-right: solid 1px @main-red;
+      }
+    }
+    .warning-info-modal-info-container {
+      display: inline-block;
+      .warning-info-modal-info-item {
+        margin-top: 10px;
+        font-size: 14px;
+        color: @main-red;
+        .info-text {
+          display: inline-block;
+          width: 80px;
+          color: #cccccc
+        }
+      }
+      .warning-info-modal-info-item:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

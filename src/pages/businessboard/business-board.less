@@ -1,0 +1,57 @@
+@import "../../base.less";
+.business-board {
+  position: relative;
+  height: 100%;
+  .business-board-map {
+    height: 100%;
+    width: 100%;
+  }
+
+  .business-board-content-list-root {
+    position: absolute;
+    display: inline-block;
+    width: 420px;
+    top: 80px;
+    left: 28px;
+    bottom: 20px
+  }
+}
+
+.business-board-list-item-content-right {
+  display: inline-block;
+  vertical-align: top;
+  .label-key {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+    color: #6ac8fa;
+  }
+  .label-value {
+    color: #cccccc;
+  }
+}
+
+.business-board-list-item-car-number {
+  margin-right: 50px;
+  display: inline-block;
+  background: @main-blue;
+  font-size: 16px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  width: 100px;
+  border-radius: 5px;
+  color: @main-white;
+}
+
+.business-board-list-item-avatar {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+  img {
+    width: 80px;
+    height: 88px;
+    outline: none;
+    border: none;
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "git.ignoreLimitWarning": true
+}

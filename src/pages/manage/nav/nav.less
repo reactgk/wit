@@ -1,0 +1,114 @@
+@import "../../../base.less";
+.nav {
+  display: inline-block;
+  height: 100%;
+  overflow: auto;
+  background: @main-light-blue;
+  width: @nav-width;
+  position: relative;
+  cursor: pointer;
+  .nav-image {
+    position: absolute;
+    width: @nav-width;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .nav-item {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px #c4e1ff;
+    color: #424e67;
+    position: relative;
+    .icon-wrapper {
+      position: absolute;
+      display: inline-block;
+      width: 40px;
+      top: 1px;
+      bottom: 1px;
+      background: #d0e7ff;
+      text-align: center;
+    }
+    .label {
+      position: relative;
+      left: 50px;
+    }
+    .triangle-up {
+      display:inline-block;
+      width:0;
+      height:0;
+      border-width:0 6px 6px;
+      border-style:solid;
+      border-color:transparent transparent @main-black;
+      position:absolute;
+      top: 17px;
+      right: 20px;
+    }
+
+    .triangle-down {
+      display:inline-block;
+      width:0;
+      height:0;
+      border-width:6px 6px 0;
+      border-style:solid;
+      border-color: @main-light-black transparent transparent;
+      position:absolute;
+      top: 17px;
+      right: 20px;
+    }
+  }
+  .nav-item-title {
+    background: rgb(163, 204, 250);
+    color: @main-white;
+    .icon-wrapper {
+      background: transparent;
+      text-align: center;
+    }
+  }
+
+  .nav-item-active {
+    background: rgb(163, 204, 250);
+    .icon-wrapper {
+      background: rgb(163, 204, 250);
+    }
+  }
+
+  .nav-sub-item {
+    .icon-wrapper {
+      background: transparent;
+      left: 32px;
+    }
+    .label {
+      left: 72px
+    }
+  }
+
+  .nav-sub-item-active {
+    background: @main-white;
+    border-left: solid 3px @main-blue;
+    .icon-wrapper {
+      background: transparent;
+      i {
+        color: @main-blue
+      }
+    }
+    .label {
+      color: @main-blue
+    }
+  }
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, .65);
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:active {
+  text-decoration: none;
+}

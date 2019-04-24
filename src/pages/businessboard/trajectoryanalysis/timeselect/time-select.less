@@ -1,0 +1,74 @@
+@import "../../../../base.less";
+.time-select {
+  position: absolute;
+  left: 460px;
+  right: 20px;
+  bottom: 20px;
+  height: 120px;
+  background: rgba(61, 104, 195, .1);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .time-select-text-container {
+    width: 100%;
+    .time-select-text {
+      cursor: pointer;
+      display: inline-block;
+      color: @main-blue;
+      line-height: 26px;
+      text-align: center;
+      width: 4%;
+    }
+    .time-select-text-active {
+      background: rgba(3 ,157 , 253, 0.5);
+      color: @main-white;
+    }
+    .time-select-text:hover, .time-select-text-active {
+      background: rgba(3 ,157 , 253, 0.5);
+      color: @main-white;
+    }
+  }
+
+  .time-select-line-container {
+    position: relative;
+    margin-top: 12px;
+    .time-select-line-slider-container {
+      position: absolute;
+      left: 2%;
+      right: 2%;
+      top: 2px;
+      .ant-slider {
+        margin: 0;
+      }
+      .ant-slider-rail {
+        background-color: transparent;
+      }
+      .ant-slider-track {
+        background-color: @main-blue;
+      }
+      .ant-slider-handle {
+        z-index: 1;
+      }
+    }
+    .time-select-line {
+      height: 1px;
+      border-bottom:1px dashed @main-blue;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      right: 0;
+    }
+
+    .time-select-line-mark {
+      display: inline-block;
+      text-align: center;
+      width: 4%;
+      .mark-line {
+        display: inline-block;
+        height: 14px;
+        width: 1px;
+        background: @main-blue;
+      }
+    }
+  }
+}

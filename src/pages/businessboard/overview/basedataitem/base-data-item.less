@@ -1,0 +1,30 @@
+@import "../../../../base.less";
+.data-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 108px;
+  height: 46px;
+  border-radius: 25px;
+  border: solid 2px rgba(53, 71, 153, .8);
+  font-size: 12px;
+  position: relative;
+  cursor: pointer;
+  .icon {
+    position: absolute;
+    left: 16px;
+    width: 24px;
+    top: 8px;
+  }
+  .data-root {
+    position: absolute;
+    display: inline-block;
+    line-height: normal;
+    color: #9EF1FF;
+    top: 6px;
+    right: 16px;
+    .value {
+      text-align: left;
+      font-family: 'custom';
+    }
+  }
+}

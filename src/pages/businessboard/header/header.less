@@ -1,0 +1,87 @@
+@import "../../../base.less";
+.business-board-header {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  .title-root {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    .title-left {
+      position: absolute;
+      display: inline-block;
+      text-align: left;
+      color: @main-light-blue;
+      padding-left: 30px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: calc(50% - 206px);
+      height: 40px;
+      line-height: 40px;
+      border-bottom: solid 2px rgb(65, 114, 155);
+      background: linear-gradient(to bottom, rgb(70 36 75), rgba(61, 104, 195, .4));
+    }
+    .title-middle {
+      position: absolute;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      top: 0;
+      bottom: 0;
+      left: calc(50% - 207px);
+      right: calc(50% - 207px);
+      z-index: 1;
+      background: linear-gradient(to bottom, rgb(70 36 75), rgba(61, 104, 195, .4));
+      .title-label {
+        display: inline-block;
+        padding-top: 16px;
+        font-size: 24px;
+        color: @main-white;
+      }
+    }
+    .title-right {
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: calc(50% - 206px);
+      height: 40px;
+      line-height: 40px;
+      border-bottom: solid 2px rgb(65, 114, 155);
+      background: linear-gradient(to bottom, rgb(70 36 75), rgba(61, 104, 195, .4));
+    }
+  }
+
+  .time-root {
+    margin-top: -2px;
+    position: relative;
+    .img {
+      width: 440px;
+    }
+    .time {
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 14px;
+      .clock {
+        height: 14px;
+        margin-top: -2px;
+      }
+      .label {
+        display: inline-block;
+        font-family: 'custom';
+        font-size: 16px;
+        color: @main-green;
+        text-align: center;
+        width: 126px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+.population-gross-item-topic {
+  height: 200px;
+  text-align: center;
+}
+.population-gross-item-topic .center-chart {
+  display: inline-block;
+  height: 330px;
+  width: 330px;
+  z-index: 2;
+  top: -67px;
+}
+.population-gross-item-topic .population-gross-data-root {
+  position: absolute;
+  top: 45px;
+  bottom: 22px;
+  left: 122px;
+  right: 122px;
+  height: 116px;
+  line-height: 116px;
+  text-align: center;
+  border-radius: 50%;
+  color: #424e67;
+}
+.population-gross-item-topic .population-gross-data-root .data {
+  font-family: 'custom';
+  line-height: normal;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 34px;
+  z-index: 0;
+}
+.population-gross-item-topic .population-gross-data-root .label {
+  line-height: normal;
+  z-index: 0;
+}
